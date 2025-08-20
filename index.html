@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern Accent Border</title>
+<style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+      height: 100vh;
+      background: #fff;
+      margin: 0;
+    }
+    .card {
+      width: 190mm;   /* A4 width */
+      height: 130mm;  /* Half of A4 height */
+      border: 4px solid black;
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Corner accent blocks */
+    .card::before, .card::after {
+      content: "";
+      position: absolute;
+      width: 20mm;
+      height: 20mm;
+      border: 4px solid black;
+    }
+    .card::before {
+      top: -4px;
+      left: -4px;
+      border-right: none;
+      border-bottom: none;
+    }
+    .card::after {
+      bottom: -4px;
+      right: -4px;
+      border-left: none;
+      border-top: none;
+    }
+    .center-text {
+      font-family: "Brush Script MT", cursive;
+      font-size: 40px;
+      text-align: center;
+      /* line-height: 120mm; */
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <div class="center-text" contenteditable="true">A special gift for you</div>
+</div>
+<div class="card">
+    <div class="center-text" contenteditable="true">a special gift</div>
+</div>
+</body>
+</html>
