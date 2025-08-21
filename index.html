@@ -14,18 +14,18 @@
         margin: 0;
       }
 
-      *[contenteditable=true] {
-        transition: all .5s ease;
+      *[contenteditable='true'] {
+        transition: all 0.5s ease;
       }
 
-      *[contenteditable=true]:hover {
+      *[contenteditable='true']:hover {
         background: rgb(255, 237, 203);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
       }
 
-      *[contenteditable=true]:focus {
+      *[contenteditable='true']:focus {
         background: rgb(253, 244, 227);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
       }
 
       .card {
@@ -96,9 +96,9 @@
       .part-4 .center-text {
         font-family: 'Times New Roman', cursive;
         font-size: 24px;
-        margin: 60px 80px 0;
-        align-self: flex-start;
-        text-align: left;
+        margin: 0 80px 0;
+        align-self: center;
+        text-align: center;
         padding: 0 4px;
       }
 
@@ -107,9 +107,15 @@
         position: absolute;
       }
 
-      .part-1.card {border: none;}
-      .part-2.card { border: none;}
-      .part-3.card { border: none;}
+      .part-1.card {
+        border: none;
+      }
+      .part-2.card {
+        border: none;
+      }
+      .part-3.card {
+        border: none;
+      }
       .part-4.card {
         border: 10px double black;
       }
@@ -123,12 +129,16 @@
   </head>
   <body>
     <div class="card part-1">
-      <img class="image" src="/bg-1.png" alt="">
-      <div class="center-text" contenteditable="true">A special gift</div>
+      <img class="image" src="/bg-1.png" alt="" />
+      <div class="center-text" contenteditable="true">A special gift <br> for you</div>
     </div>
     <div class="card part-2">
       <div class="center-text">
-        <span>&#8220;</span><span contenteditable="true" style="padding: 0 4px;">If you don't like to read, you haven't found<br> the right book.</span><span>&#8221;</span>
+        <span>&#8220;</span
+        ><span contenteditable="true" style="padding: 0 4px"
+          >If you don't like to read, you haven't found<br />
+          the right book.</span
+        ><span>&#8221;</span>
         <small contenteditable="true">- J.K. Rowling</small>
       </div>
       <div class="image-wrapper">
@@ -139,7 +149,10 @@
       <div class="center-text" contenteditable="true">&nbsp;</div>
     </div>
     <div class="card part-4">
-      <div class="center-text" contenteditable="true">Dear Gideon - Happy Birthday and lots <br> of love Dad</div>
+      <div class="center-text" contenteditable="true">
+        Dear Gideon - Happy Birthday and lots <br />
+        of love Dad
+      </div>
     </div>
   </body>
 </html>
