@@ -57,6 +57,7 @@
         font-family: 'Brush Script MT', cursive;
         font-size: 40px;
         text-align: center;
+        z-index: 1;
       }
 
       .part-1 .center-text {
@@ -70,9 +71,10 @@
 
       .part-2 .center-text {
         font-family: 'Times New Roman', cursive;
+        font-size: 36px;
         font-weight: 600;
         text-align: left;
-        padding: 20px;
+        padding: 22px;
         margin: 30px 108px 100px;
       }
 
@@ -106,6 +108,10 @@
         width: 100%;
         position: absolute;
       }
+      .part-4.card .image {
+        width: 100%;
+        position: absolute;
+      }
 
       .part-1.card {
         border: none;
@@ -117,7 +123,8 @@
         border: none;
       }
       .part-4.card {
-        border: 10px double black;
+        /* border: 10px double black; */
+        border: none;
       }
 
       @media print {
@@ -129,7 +136,7 @@
   </head>
   <body>
     <div class="card part-1">
-      <img class="image" src="/bg-1.png" alt="" />
+      <img class="image" src="/bg-2.png" alt="" />
       <div class="center-text" contenteditable="true">A special gift <br> for you</div>
     </div>
     <div class="card part-2">
@@ -149,6 +156,7 @@
       <div class="center-text" contenteditable="true">&nbsp;</div>
     </div>
     <div class="card part-4">
+      <img class="image" src="/bg-4.png" alt="" />
       <div class="center-text" contenteditable="true">
         Dear Gideon - Happy Birthday and lots <br />
         of love Dad
