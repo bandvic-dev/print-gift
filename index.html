@@ -41,18 +41,7 @@
         box-sizing: border-box;
         overflow: hidden;
       }
-      .card::before {
-        top: -4px;
-        left: -4px;
-        border-right: none;
-        border-bottom: none;
-      }
-      .card::after {
-        bottom: -4px;
-        right: -4px;
-        border-left: none;
-        border-top: none;
-      }
+
       .center-text {
         font-family: 'Brush Script MT', cursive;
         font-size: 40px;
@@ -84,6 +73,7 @@
         margin-top: 30px;
         padding: 0 4px;
       }
+
       .part-2 .image-wrapper {
         width: 200px;
         bottom: 28px;
@@ -93,15 +83,6 @@
 
       .part-2 .image-wrapper img {
         width: 100%;
-      }
-
-      .part-4 .center-text {
-        font-family: 'Times New Roman', cursive;
-        font-size: 24px;
-        margin: 0 80px 0;
-        align-self: center;
-        text-align: center;
-        padding: 0 4px;
       }
 
       .part-1.card .image {
@@ -123,8 +104,16 @@
         border: none;
       }
       .part-4.card {
-        /* border: 10px double black; */
         border: none;
+      }
+
+      .part-4 .center-text {
+        font-family: 'Times New Roman', cursive;
+        font-size: 24px;
+        margin: 0 80px 0;
+        align-self: center;
+        text-align: center;
+        padding: 0 4px;
       }
 
       @media print {
@@ -136,8 +125,11 @@
   </head>
   <body>
     <div class="card part-1">
-      <img class="image" src="/bg-2.png" alt="" />
-      <div class="center-text" contenteditable="true">A special gift <br> for you</div>
+      <img class="image" src="bg-1.png" alt="" />
+      <div class="center-text" contenteditable="true">
+        A special gift <br />
+        for you
+      </div>
     </div>
     <div class="card part-2">
       <div class="center-text">
@@ -149,14 +141,14 @@
         <small contenteditable="true">- J.K. Rowling</small>
       </div>
       <div class="image-wrapper">
-        <img src="/exclusive-books-logo.jpg" alt="" />
+        <img src="exclusive-books-logo.jpg" alt="" />
       </div>
     </div>
     <div class="card part-3">
       <div class="center-text" contenteditable="true">&nbsp;</div>
     </div>
     <div class="card part-4">
-      <img class="image" src="/bg-4.png" alt="" />
+      <img class="image" src="bg-4.png" alt="" />
       <div class="center-text" contenteditable="true">
         Dear Gideon - Happy Birthday and lots <br />
         of love Dad
