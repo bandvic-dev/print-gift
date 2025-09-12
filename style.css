@@ -42,7 +42,7 @@ p {
     height: 130mm;
     /* Half of A4 height */
     max-height: 130mm;
-    border: 4px solid black;
+    border: 1px solid transparent;
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
