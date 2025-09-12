@@ -3,155 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <title>Gift Cart | Exclusive Books</title>
-    <style>
-      body {
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        margin: 0;
-      }
-
-      *[contenteditable='true'] {
-        transition: all 0.5s ease;
-      }
-
-      *[contenteditable='true']:hover {
-        background: rgb(255, 237, 203);
-        transition: all 0.5s ease;
-      }
-
-      *[contenteditable='true']:focus {
-        background: rgb(253, 244, 227);
-        transition: all 0.5s ease;
-      }
-
-      .card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 190mm; /* A4 width */
-        height: 130mm; /* Half of A4 height */
-        max-height: 130mm;
-        border: 4px solid black;
-        position: relative;
-        box-sizing: border-box;
-        overflow: hidden;
-      }
-
-      .center-text {
-        font-family: 'Brush Script MT', cursive;
-        font-size: 40px;
-        text-align: center;
-        z-index: 1;
-      }
-
-      .part-1 .center-text {
-        font-family: 'Brush Script MT', cursive;
-        font-size: 70px;
-        text-align: center;
-        padding: 20px;
-        position: relative;
-        z-index: 1;
-      }
-
-      .part-2 .center-text {
-        font-family: 'Times New Roman', cursive;
-        font-size: 36px;
-        font-weight: 600;
-        text-align: left;
-        padding: 22px;
-        margin: 30px 108px 100px;
-      }
-
-      .part-2 small {
-        display: table;
-        font-size: 18px;
-        margin-top: 30px;
-        padding: 0 4px;
-      }
-
-      .part-2 .image-wrapper {
-        width: 200px;
-        bottom: 28px;
-        left: 118px;
-        position: absolute;
-      }
-
-      .part-2 .image-wrapper img {
-        width: 100%;
-      }
-
-      .part-1.card .image {
-        width: 100%;
-        position: absolute;
-      }
-      .part-4.card .image {
-        width: 100%;
-        position: absolute;
-      }
-
-      .part-1.card {
-        border: none;
-      }
-      .part-2.card {
-        border: none;
-      }
-      .part-3.card {
-        border: none;
-      }
-      .part-4.card {
-        border: none;
-      }
-
-      .part-4 .center-text {
-        font-family: 'Times New Roman', cursive;
-        font-size: 24px;
-        margin: 0 80px 0;
-        align-self: center;
-        text-align: center;
-        padding: 0 4px;
-      }
-
-      @media print {
-        .part-1 {
-          transform: rotate(-180deg);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="card part-1">
-      <img class="image" src="bg-1.png" alt="" />
-      <div class="center-text" contenteditable="true">
-        A special gift <br />
-        for you
-      </div>
+      <img
+        class="image"
+        src="book-delimiter.png"
+        width="579"
+        height="60"
+        alt="Logo"
+      />
     </div>
     <div class="card part-2">
-      <div class="center-text">
-        <span>&#8220;</span
-        ><span contenteditable="true" style="padding: 0 4px"
-          >If you don't like to read, you haven't found<br />
-          the right book.</span
-        ><span>&#8221;</span>
-        <small contenteditable="true">- J.K. Rowling</small>
-      </div>
-      <div class="image-wrapper">
-        <img src="exclusive-books-logo.jpg" alt="" />
+      <img
+        src="exclusive-books-logo-mini.jpg"
+        width="50"
+        height="50"
+        alt="Logo"
+      />
+      <div class="text Aptos">
+        <p contenteditable="true">
+          For gifts that delight the mind and show you care, Exclusive Books is the only place to find that something special.
+          <br>
+          Don’t forget if you’ve left it late, you can buy an instant voucher for those you care about.
+        </p>
       </div>
     </div>
-    <div class="card part-3">
-      <div class="center-text" contenteditable="true">&nbsp;</div>
-    </div>
+    <div class="card part-3"></div>
     <div class="card part-4">
-      <img class="image" src="bg-4.png" alt="" />
-      <div class="center-text" contenteditable="true">
-        Dear Gideon - Happy Birthday and lots <br />
-        of love Dad
+      <img
+        class="image"
+        src="exclusive-books-logo-mini.jpg"
+        width="50"
+        height="50"
+        alt="Logo"
+      />
+      <div class="text EBGaramond-Medium">
+        <p contenteditable="true">
+          Happy Birthday Jean-Luc!
+          <br />
+          <br />
+          You are a very special person who likes to kick toads and hunt nazis.
+          Your middle-weight belt was hard-earned as was your Nobel peace prize.
+          We hope you enjoy reading about insects and werewolves. Have an
+          ice-cream if you feel like it.
+          <br />
+          <br />
+          Love Georgia
+        </p>
       </div>
     </div>
   </body>
