@@ -6,7 +6,7 @@
       @font-face {
         font-family: 'Aptos';
         src: url('fonts/Aptos/Aptos.woff2') format('woff2'),
-          url('fonts/Aptos/Aptos.woff') format('woff');
+        url('fonts/Aptos/Aptos.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -19,7 +19,7 @@
       @font-face {
         font-family: 'EBGaramond-Medium';
         src: url('fonts/EBGaramond/EBGaramond-Medium.woff2') format('woff2'),
-          url('fonts/EBGaramond/EBGaramond-Medium.woff') format('woff');
+        url('fonts/EBGaramond/EBGaramond-Medium.woff') format('woff');
         font-weight: 500;
         font-style: normal;
         font-display: swap;
@@ -60,7 +60,7 @@
       }
 
       .cell.cell-2 .content {
-        max-width: 416px;
+        max-width: 410px;
       }
 
       .cell.cell-2 .text {
@@ -83,7 +83,7 @@
       }
 
       .cell.cell-4 .text {
-        font-size: 18px;
+        font-size: {{ font_size }};
       }
 
       .content {
@@ -152,20 +152,12 @@
               alt="Logo"
             />
             <div class="text EBGaramond-Medium">
-              Happy Birthday Jean-Luc!
-              <br />
-              <br />
-              You are a very special person who likes to kick toads and hunt
-              nazis. Your middle-weight belt was hard-earned as was your Nobel
-              peace prize. We hope you enjoy reading about insects and
-              werewolves. Have an ice-cream if you feel like it.
-              <br />
-              <br />
-              Love Georgia
+              {{ message }}
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </body>
 </html>

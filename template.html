@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    @font-face {
+      font-family: 'Aptos';
+      src: url('fonts/Aptos/Aptos.woff2') format('woff2'),
+      url('fonts/Aptos/Aptos.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .Aptos {
+      font-family: 'Aptos', sans-serif;
+    }
+
+    @font-face {
+      font-family: 'EBGaramond-Medium';
+      src: url('fonts/EBGaramond/EBGaramond-Medium.woff2') format('woff2'),
+      url('fonts/EBGaramond/EBGaramond-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    .EBGaramond-Medium {
+      font-family: 'EBGaramond-Medium', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    table.page {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    td.cell {
+      border: 1px solid transparent;
+      padding: 40px;
+    }
+
+    .cell-2 .text {
+      font-size: 13px;
+      text-align: left;
+      max-width: 450px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .cell-4 .text {
+      font-size: {{ font_size }};
+    }
+
+    .image {
+      display: block;
+      margin: 0 auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+<table class="page" width="720" cellspacing="0" cellpadding="0">
+  <tr height="440">
+    <td class="cell cell-1" width="720" height="440" align="center" valign="middle">
+      <img
+              class="image"
+              src="img/book-delimiter-rotated.png"
+              width="579"
+              height="60"
+              alt="Logo"
+      />
+    </td>
+  </tr>
+
+  <tr height="440">
+    <td class="cell cell-2" width="720" height="440" align="center" valign="top">
+      <div style="height:640px;"></div>
+      <img
+              class="image"
+              src="img/exclusive-books-logo-mini.jpg"
+              width="50"
+              height="50"
+              alt="Logo"
+              style="margin-bottom:24px"
+      />
+      <div class="text Aptos">
+        For gifts that delight the mind and show you care, Exclusive Books is the only
+        place to find that something special.
+        
+
+        Don’t forget if you’ve left it late, you can buy an instant
+        voucher for those you care about.
+      </div>
+    </td>
+  </tr>
+
+  <tr height="440">
+    <td class="cell cell-3" width="720" height="440" align="center" valign="middle">
+      <img width="720px" height="440px" src="img/transparent-image.png" alt="Transparent Image">
+    </td>
+  </tr>
+
+  <tr height="440">
+    <td class="cell cell-4" width="720" height="440" align="center" valign="top">
+      <div style="height:440px;"></div>
+      <img
+              class="image"
+              src="img/exclusive-books-logo-mini.jpg"
+              width="50"
+              height="50"
+              alt="Logo"
+              style="margin-bottom:16px"
+      />
+      <div class="text EBGaramond-Medium">
+        {{ message }}
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+ 
